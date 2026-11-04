@@ -466,28 +466,37 @@ body {
   border-color: var(--color-gold, #D4B483);
 }
 
-/* Botón Flotante de WhatsApp */
+/* Botón Flotante de WhatsApp con Logo Redondo */
 .whatsapp-btn {
   position: fixed;
   bottom: 28px;
   right: 28px;
-  background-color: #25D366;
-  color: white;
-  padding: 12px 24px;
+  background-color: #FFFFFF; /* Fondo blanco para resaltar el círculo verde */
+  color: #0B1320;
+  padding: 8px 20px 8px 10px; /* Padding ajustado al icono circular */
   border-radius: 50px;
   text-decoration: none;
   font-weight: 600;
   font-size: 13px;
-  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  letter-spacing: 0.3px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   z-index: 1000;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
-  transition: transform 0.3s ease;
+  gap: 10px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.whatsapp-btn .whatsapp-icon {
+  display: block;
+  flex-shrink: 0;
 }
 
 .whatsapp-btn:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 10px 28px rgba(37, 211, 102, 0.35);
+  color: #000000;
 }
 
 /* ==========================================
