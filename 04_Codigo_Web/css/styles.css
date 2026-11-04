@@ -2,6 +2,11 @@
    ÉVORA - Hoja de Estilos Oficial (Versión Editorial & Modo Oscuro Premium)
    ========================================================================== */
 
+   /* Desplazamiento suave para todos los enlaces ancla */
+html {
+  scroll-behavior: smooth;
+}
+
 /* 1. Reseteo Básico y Ajustes Globales */
 * {
   margin: 0;
