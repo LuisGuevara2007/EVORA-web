@@ -4,140 +4,121 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eventos Corporativos | ÉVORA - Experiences & Events</title>
-  <meta name="description" content="Organización integral de congresos, lanzamientos de marca y seminarios ejecutivos. Excelencia operativa y tecnología para la gestión corporativa.">
-
-  <!-- Tipografías Oficiales -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Fuentes Google -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Estilos CSS -->
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navegación Principal -->
+  <!-- Cabecera Principal Oscura -->
   <header class="header">
-    <nav class="nav-container">
-   <a href="index.html" class="logo">
-  <span class="logo-title">ÉVORA</span>
-  <span class="logo-sub">EXPERIENCES</span>
-</a>
-<ul class="nav-links">
-  <li><a href="index.html">Inicio</a></li>
-  <li><a href="nosotros.html">Nosotros</a></li>
-  <li><a href="bodas.html">Bodas</a></li>
-  <li><a href="bodas-destino.html">Bodas Destino</a></li>
-  <li><a href="corporativos.html" class="active">Corporativos</a></li>
-  <li><a href="galeria.html">Galería</a></li>
-  <li><a href="Paquetes-Comerciales.html">Paquetes</a></li>
-  <li><a href="contacto.html">Contacto</a></li>
-</ul>
-      <a href="cotizar.html" class="btn btn-primary">Cotizar Evento</a>
-    </nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-title">ÉVORA</span>
+        <span class="logo-sub">EXPERIENCES</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="bodas.html">Bodas</a></li>
+        <li><a href="bodas-destino.html">Bodas Destino</a></li>
+        <li><a href="corporativos.html" class="active">Corporativos</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="Paquetes-Comerciales.html">Paquetes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <a href="cotizar.html" class="btn btn-gold">Cotizar Evento &rarr;</a>
+    </div>
   </header>
 
-<!-- Hero Editorial de Eventos Corporativos (Gala y Coctel Ejecutivo) -->
-  <section class="hero hero-editorial" style="background: linear-gradient(180deg, rgba(11, 19, 32, 0.50) 0%, rgba(11, 19, 32, 0.65) 100%), url('https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;">
+  <!-- Hero Secundario -->
+  <section class="hero hero-secondary" style="min-height: 55vh; background: linear-gradient(180deg, rgba(11, 19, 32, 0.75) 0%, rgba(11, 19, 32, 0.9) 100%), url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;">
     <div class="hero-content">
-      <p class="tagline">EVENTOS DE ALTO IMPACTO</p>
+      <span class="tagline">EVENTOS DE ALTO IMPACTO</span>
       <h1>Precisión ejecutiva y elegancia para la <em>imagen de tu empresa.</em></h1>
-      <p style="color: #F1F5F9; font-size: 16px; margin-bottom: 32px; max-width: 580px;">
-        Planificación estratégica, producción técnica, acreditación digital mediante QR y escenografía premium para congresos, convenciones y galas corporativas.
-      </p>
-      <div class="hero-actions">
+      <p>Planificación estratégica, producción técnica, acreditación digital mediante QR y escenografía premium para congresos, convenciones y galas corporativas.</p>
+      
+      <div class="hero-buttons" style="display: flex; gap: 16px; justify-content: center; margin-top: 24px;">
         <a href="#soluciones" class="btn btn-gold">Ver soluciones &rarr;</a>
-        <a href="contacto.html" class="btn btn-outline-light">Cotizar evento</a>
+        <a href="cotizar.html" class="btn btn-outline" style="border: 1px solid rgba(255,255,255,0.4); color: #FFFFFF;">Cotizar evento</a>
       </div>
     </div>
   </section>
 
-  <!-- Secciones de Servicios Corporativos (Sección 5) -->
-  <section class="section">
+  <!-- Sección: Soluciones Corporativas (id="soluciones" para desplazamiento suave) -->
+  <section id="soluciones" class="section">
     <div class="container">
-      <h2 class="section-title">Soluciones para Empresas</h2>
-      <p class="section-subtitle">Planificación estratégica, producción técnica y gestión digital de asistentes.</p>
+      <h2 class="section-title">Nuestras Soluciones Corporativas</h2>
+      <p class="section-subtitle">Diseñadas para maximizar el retorno de experiencia y el prestigio institucional de tu marca.</p>
 
-      <div class="grid-services">
-        <!-- Servicio 1: Congresos y Convenciones -->
-        <article class="card">
-          <div class="card-body">
-            <h3>Congresos y Convenciones</h3>
-            <p>Logística de gran escala, acreditación digital mediante QR, gestión de ponentes y control de itinerarios en tiempo real.</p>
-            <a href="01_Paquetes_Comerciales.txt" class="card-link">Ver soluciones &rarr;</a>
-          </div>
-        </article>
+      <div class="cards-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 40px;">
+        
+        <!-- Tarjeta 1: Congresos & Convenciones -->
+        <div class="card" style="padding: 32px; background: #FFFFFF; border-radius: 16px; border: 1px solid #E2E8F0;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #0B1320; margin-bottom: 12px;">Congresos & Convenciones</h3>
+          <p style="color: #4A5568; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Producción técnica integral, control de ponentes, traducción simultánea y gestión logística para eventos masivos.</p>
+          <a href="congresos-convenciones.html" style="color: #D4B483; font-weight: 600; text-decoration: none; font-size: 14px;">Solicitar propuesta &rarr;</a>
+        </div>
 
-        <!-- Servicio 2: Lanzamientos de Marca -->
-        <article class="card">
-          <div class="card-body">
-            <h3>Lanzamientos de Marca</h3>
-            <p>Diseño de experiencias inmersivas, escenografía premium y producción audiovisual impecable para impresionar a tu audiencia.</p>
-            <a href="01_Paquetes_Comerciales.txt" class="card-link">Ver soluciones &rarr;</a>
-          </div>
-        </article>
+        <!-- Tarjeta 2: Galas & Cenas Anuales -->
+        <div class="card" style="padding: 32px; background: #FFFFFF; border-radius: 16px; border: 1px solid #E2E8F0;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #0B1320; margin-bottom: 12px;">Galas & Aniversarios</h3>
+          <p style="color: #4A5568; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Montajes de alta sofisticación, catering corporativo de autor, premiaciones y espectáculos artísticos en vivo.</p>
+          <a href="galas-aniversarios.html" style="color: #D4B483; font-weight: 600; text-decoration: none; font-size: 14px;">Solicitar propuesta &rarr;</a>
+        </div>
 
-        <!-- Servicio 3: Seminarios y Networking -->
-        <article class="card">
-          <div class="card-body">
-            <h3>Seminarios y Networking</h3>
-            <p>Espacios ejecutivos diseñados para el relacionamiento estratégico, cocteles corporativos y reuniones de alto nivel.</p>
-            <a href="01_Paquetes_Comerciales.txt" class="card-link">Ver soluciones &rarr;</a>
-          </div>
-        </article>
+        <!-- Tarjeta 3: Lancamientos de Marca -->
+        <div class="card" style="padding: 32px; background: #FFFFFF; border-radius: 16px; border: 1px solid #E2E8F0;">
+          <h3 style="font-family: 'Cormorant Garamond', serif; font-size: 24px; color: #0B1320; margin-bottom: 12px;">Lanzamientos de Producto</h3>
+          <p style="color: #4A5568; font-size: 14px; line-height: 1.6; margin-bottom: 20px;">Experiencias inmersivas con arquitectura efímera, tecnología audiovisual interactiva y acreditación digital instantánea.</p>
+          <a href="lanzamientos-producto.html" style="color: #D4B483; font-weight: 600; text-decoration: none; font-size: 14px;">Solicitar propuesta &rarr;</a>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Banner CTA -->
-  <section class="section section-tech">
-    <div class="container tech-content">
-      <div class="tech-text">
-        <span class="tagline">Gestión Inteligente</span>
-        <h2>Optimiza el registro de tus asistentes corporativos</h2>
-        <p>Integración con CRM, envío masivo de invitaciones digitales y reportes en vivo para tu equipo de marketing y eventos.</p>
-        <a href="#contacto" class="btn btn-primary">Solicitar Demo Corporativa</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer Institucional -->
+  <!-- Pie de Página Oscuro -->
   <footer class="footer">
-    <div class="container footer-content">
+    <div class="footer-content">
       <div class="footer-brand">
         <span class="logo-title">ÉVORA</span>
-        <span class="logo-sub">EXPERIENCES · EVENTS · DESTINATION WEDDINGS</span>
-        <p>Cada detalle, perfectamente planeado.</p>
+        <span class="logo-sub">EXPERIENCES</span>
+        <p>Experiencias memorables con arquitectura visual y precisión impecable.</p>
       </div>
       <div class="footer-links">
         <h4>Navegación</h4>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="bodas.html">Bodas</a></li>
+          <li><a href="bodas-destino.html">Bodas Destino</a></li>
           <li><a href="corporativos.html">Corporativos</a></li>
-          <li><a href="01_Paquetes_Comerciales.txt">Paquetes</a></li>
+          <li><a href="galeria.html">Galería</a></li>
         </ul>
       </div>
       <div class="footer-contact">
-        <h4>Contacto</h4>
-        <p>Email: contacto@evora.pe</p>
-        <p>WhatsApp: +51 900 000 000</p>
+        <h4>Contacto Oficial</h4>
+        <p>Atención previa cita</p>
+        <p>Email: contacto@evora.com</p>
+        <p>Atención 24/7 vía WhatsApp</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 ÉVORA. Todos los derechos reservados.</p>
+      <p>&copy; 2026 ÉVORA Experiences & Events. Todos los derechos reservados.</p>
     </div>
   </footer>
-  
-<!-- Botón Flotante de WhatsApp (Solo Ícono Piel/Dorado) -->
-<a href="https://wa.me/908715882" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-  <svg class="whatsapp-icon" width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="24" cy="24" r="24" fill="var(--color-gold, #D4B483)"/>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M24 8C15.163 8 8 15.163 8 24C8 26.822 8.734 29.473 10.02 31.776L8.056 39.056L15.485 37.106C17.72 38.293 20.281 38.999 24 38.999C32.837 38.999 40 31.836 40 23.999C40 16.162 32.837 8 24 8ZM18.57 15.772C18.257 15.076 17.927 15.062 17.629 15.05C17.382 15.04 17.098 15.04 16.814 15.04C16.53 15.04 16.069 15.146 15.679 15.572C15.289 15.998 14.189 17.027 14.189 19.12C14.189 21.213 15.715 23.236 15.928 23.52C16.141 23.804 18.91 28.057 23.167 29.897C26.705 31.426 27.424 31.121 28.204 31.05C28.985 30.979 30.724 30.02 31.079 29.026C31.434 28.032 31.434 27.18 31.328 26.995C31.222 26.81 30.938 26.704 30.512 26.491C30.086 26.278 28.007 25.255 27.617 25.113C27.227 24.971 26.943 24.9 26.659 25.326C26.375 25.752 25.566 26.704 25.318 26.995C25.07 27.286 24.821 27.322 24.395 27.109C23.969 26.896 22.597 26.446 20.971 24.996C19.705 23.867 18.852 22.471 18.604 22.045C18.356 21.619 18.577 21.388 18.791 21.175C18.983 20.984 19.219 20.672 19.432 20.423C19.645 20.174 19.716 19.99 19.858 19.706C20 19.422 19.929 19.173 19.823 18.96C19.717 18.747 18.936 16.84 18.57 15.772Z" fill="#0B1320"/>
-  </svg>
-</a>
+
+  <!-- Botón Flotante Circular Évora (WhatsApp) -->
+  <a href="https://wa.me/51987654321" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg class="whatsapp-icon" width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="24" cy="24" r="24" fill="var(--color-gold, #D4B483)"/>
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M24 8C15.163 8 8 15.163 8 24C8 26.822 8.734 29.473 10.02 31.776L8.056 39.056L15.485 37.106C17.72 38.293 20.281 38.999 24 38.999C32.837 38.999 40 31.836 40 23.999C40 16.162 32.837 8 24 8ZM18.57 15.772C18.257 15.076 17.927 15.062 17.629 15.05C17.382 15.04 17.098 15.04 16.814 15.04C16.53 15.04 16.069 15.146 15.679 15.572C15.289 15.998 14.189 17.027 14.189 19.12C14.189 21.213 15.715 23.236 15.928 23.52C16.141 23.804 18.91 28.057 23.167 29.897C26.705 31.426 27.424 31.121 28.204 31.05C28.985 30.979 30.724 30.02 31.079 29.026C31.434 28.032 31.434 27.18 31.328 26.995C31.222 26.81 30.938 26.704 30.512 26.491C30.086 26.278 28.007 25.255 27.617 25.113C27.227 24.971 26.943 24.9 26.659 25.326C25.375 25.752 25.566 26.704 25.318 26.995C25.07 27.286 24.821 27.322 24.395 27.109C23.969 26.896 22.597 26.446 20.971 24.996C19.705 23.867 18.852 22.471 18.604 22.045C18.356 21.619 18.577 21.388 18.791 21.175C18.983 20.984 19.219 20.672 19.432 20.423C19.645 20.174 19.716 19.99 19.858 19.706C20 19.422 19.929 19.173 19.823 18.96C19.717 18.747 18.936 16.84 18.57 15.772Z" fill="#0B1320"/>
+    </svg>
+  </a>
 
 </body>
 </html>
