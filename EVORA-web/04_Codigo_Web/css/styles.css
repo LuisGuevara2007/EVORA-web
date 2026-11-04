@@ -1,0 +1,554 @@
+/* ==========================================================================
+   ÉVORA - Hoja de Estilos Oficial (Versión Editorial & Modo Oscuro Premium)
+   ========================================================================== */
+
+/* 1. Reseteo Básico y Ajustes Globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body, 'Inter', sans-serif);
+  background-color: var(--color-ivory, #FAF8F4);
+  color: var(--color-charcoal, #2C3539);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Cabecera Oscura Premium (Solución de Solapamiento) */
+.header {
+  background-color: var(--color-midnight, #0B1320);
+  border-bottom: 1px solid rgba(212, 180, 131, 0.2);
+  padding: 16px 32px;
+  position: relative; /* Desaparece al hacer scroll */
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1350px; /* Ancho ampliado para mayor espacio horizontal */
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Estilos Oficiales del Logo ÉVORA */
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.logo-title {
+  font-family: var(--font-display, 'Cormorant Garamond', serif);
+  font-size: 26px !important;
+  font-weight: 700 !important;
+  letter-spacing: 3px !important;
+  color: #FFFFFF !important; /* Blanco brillante */
+  display: block !important;
+  line-height: 1 !important;
+}
+
+.logo-sub {
+  font-size: 9px !important;
+  letter-spacing: 3px !important;
+  color: var(--color-gold, #D4B483) !important; /* Dorado brillante */
+  display: block !important;
+  margin-top: 3px !important;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 14px; /* Reducción ligera de espacio entre enlaces */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #E2E8F0;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  white-space: nowrap; /* Evita saltos de línea en el texto */
+  transition: color 0.3s ease;
+}
+
+.header .btn {
+  padding: 10px 22px !important;
+  font-size: 12px !important;
+  white-space: nowrap !important;
+  flex-shrink: 0 !important; /* Evita que el botón se estire o se rompa */
+  width: auto !important; /* Mantiene el ancho ajustado a su contenido */
+}
+
+/* 3. Botones Oficiales Premium */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary,
+.btn-gold {
+  background-color: var(--color-gold, #D4B483);
+  color: var(--color-midnight, #0B1320);
+}
+
+.btn-primary:hover,
+.btn-gold:hover {
+  background-color: #E6C899;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 180, 131, 0.3);
+}
+
+.btn-secondary,
+.btn-outline-light {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.btn-secondary:hover,
+.btn-outline-light:hover {
+  background-color: #FFFFFF;
+  color: var(--color-midnight, #0B1320);
+  transform: translateY(-2px);
+}
+
+/* 4. Hero Principal Estilo Editorial */
+.hero,
+.hero-editorial {
+  position: relative;
+  background: linear-gradient(180deg, rgba(11, 19, 32, 0.75) 0%, rgba(11, 19, 32, 0.85) 100%), 
+              url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+  color: #FFFFFF;
+  padding: 120px 48px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.hero-content {
+  max-width: 750px;
+  text-align: left;
+}
+
+.hero .tagline,
+.hero-editorial .tagline {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--color-gold, #D4B483);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.hero h1,
+.hero-editorial h1 {
+  font-family: var(--font-display, 'Cormorant Garamond', serif);
+  font-size: 64px;
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.hero h1 em,
+.hero-editorial h1 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-gold, #D4B483);
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+/* 5. Secciones Generales y Grillas */
+.section {
+  padding: 80px 48px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--font-display, 'Cormorant Garamond', serif);
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-midnight, #0B1320);
+  margin-bottom: 12px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-slate, #64748B);
+  margin-bottom: 48px;
+  font-size: 16px;
+}
+
+.grid-services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+}
+
+/* 6. Tarjetas de Servicios y Testimonios */
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-mist, #E2E8F0);
+  border-radius: var(--radius-base, 16px);
+  padding: 36px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  font-family: var(--font-display, 'Cormorant Garamond', serif);
+  font-size: 26px;
+  color: var(--color-midnight, #0B1320);
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--color-slate, #64748B);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+.card-link {
+  color: var(--color-gold, #D4B483);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: var(--color-midnight, #0B1320);
+}
+
+/* 7. Sección Tecnología (Destacada) */
+.section-tech {
+  background-color: var(--color-mist, #E2E8F0);
+  border-radius: var(--radius-premium, 24px);
+  margin: 48px auto;
+  padding: 64px 48px;
+  max-width: 1200px;
+}
+
+.tech-content {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.tech-text h2 {
+  font-family: var(--font-display, 'Cormorant Garamond', serif);
+  font-size: 40px;
+  color: var(--color-midnight, #0B1320);
+  margin: 12px 0 20px;
+}
+
+.tech-text p {
+  color: var(--color-charcoal, #2C3539);
+  margin-bottom: 32px;
+  font-size: 16px;
+}
+
+/* 8. Sección Manifiesto */
+.manifesto-section {
+  background-color: var(--color-midnight, #0B1320);
+  color: var(--color-ivory, #FAF8F4);
+  text-align: center;
+  border-radius: var(--radius-premium, 24px);
+  margin: 64px auto;
+  padding: 80px 48px;
+  max-width: 1200px;
+}
+
+.manifesto-content blockquote {
+  font-family: var(--font-display, 'Cormorant Garamond', serif);
+  font-size: 32px;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 24px 0;
+  color: #FFFFFF;
+}
+
+.manifesto-signature {
+  color: var(--color-gold, #D4B483);
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+/* Testimonios */
+.testimonial-card .quote {
+  font-style: italic;
+  color: var(--color-charcoal, #2C3539);
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.testimonial-card .author {
+  display: block;
+  font-weight: 600;
+  color: var(--color-midnight, #0B1320);
+}
+
+.testimonial-card .event-type {
+  font-size: 12px;
+  color: var(--color-slate, #64748B);
+}
+
+/* 9. Footer Institucional Oscuro */
+.footer {
+  background-color: var(--color-midnight, #0B1320);
+  color: var(--color-ivory, #FAF8F4);
+  padding: 80px 48px 0;
+  margin-top: 96px;
+  border-top: 1px solid rgba(212, 180, 131, 0.2);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+  padding-bottom: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand .logo-title {
+  color: #FFFFFF;
+}
+
+.footer-brand p {
+  margin-top: 16px;
+  color: var(--color-gold, #D4B483);
+  font-size: 14px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+  font-family: var(--font-display, 'Cormorant Garamond', serif);
+  font-size: 20px;
+  color: var(--color-gold, #D4B483);
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links a {
+  color: var(--color-mist, #E2E8F0);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 2.2;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--color-gold, #D4B483);
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: var(--color-mist, #E2E8F0);
+  line-height: 1.8;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  padding: 24px 0;
+  font-size: 12px;
+  color: var(--color-slate, #64748B);
+}
+
+/* Hero Secundario */
+.hero-secondary {
+  min-height: 40vh;
+  padding: 80px 48px;
+}
+
+/* 10. Formulario y Contacto */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.info-item {
+  margin-top: 24px;
+}
+
+.info-item h4 {
+  font-family: var(--font-display, 'Cormorant Garamond', serif);
+  font-size: 20px;
+  color: var(--color-gold, #D4B483);
+}
+
+.info-item p {
+  color: var(--color-slate, #64748B);
+  font-size: 15px;
+}
+
+.form-card {
+  padding: 40px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--color-midnight, #0B1320);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1px solid var(--color-mist, #E2E8F0);
+  border-radius: var(--radius-base, 16px);
+  font-family: var(--font-body, 'Inter', sans-serif);
+  font-size: 14px;
+  background-color: #FFFFFF;
+  color: var(--color-charcoal, #2C3539);
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-gold, #D4B483);
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================================
+   11. Adaptación Móvil y Tablets (Responsive)
+   ========================================== */
+@media (max-width: 992px) {
+  /* 1. Cabecera estática que desaparece al deslizar hacia abajo */
+  .header {
+    position: relative !important;
+    padding: 16px 12px !important;
+    top: auto;
+  }
+
+  .nav-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  /* 2. Pestañas visibles, centradas y ordenadas en varias filas */
+  .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 8px 12px !important;
+    padding: 0 !important;
+    margin: 4px 0 !important;
+  }
+
+  .nav-links a {
+    font-size: 12px !important;
+    color: #CBD5E1 !important;
+    white-space: nowrap;
+  }
+
+  .logo-title {
+    font-size: 22px !important;
+  }
+
+  .logo-sub {
+    font-size: 8px !important;
+    text-align: center;
+  }
+
+  /* 3. Botón de cotizar compacto */
+  .header .btn {
+    padding: 8px 20px !important;
+    font-size: 12px !important;
+  }
+}
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .manifesto-content blockquote {
+    font-size: 22px;
+  }

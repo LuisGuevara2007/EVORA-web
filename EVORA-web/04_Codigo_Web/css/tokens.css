@@ -1,0 +1,30 @@
+:root {
+  /* Paleta de Colores Oficial de ÉVORA */
+  --color-midnight: #0B1320; /* Principal / Botón primario */
+  --color-gold: #D4B483;     /* Accent premium / Bordes */
+  --color-ivory: #FAF8F4;    /* Fondo general */
+  --color-charcoal: #1E293B; /* Texto principal */
+  --color-slate: #64748B;    /* Texto secundario */
+  --color-mist: #F1F5F9;     /* Fondos secundarios */
+
+  /* Tipografía */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Forma y movimiento */
+  --radius-base: 16px;
+  --radius-premium: 24px;
+  --shadow-soft: 0px 10px 30px rgba(0, 0, 0, 0.06);
+  --transition: 300ms;
+
+  /* Espaciado */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 48px;
+  --space-6: 64px;
+  --space-7: 80px;
+  --space-8: 120px;
+  --space-9: 160px;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto & Cotizaciones | ÉVORA</title>
+  <meta name="description" content="Ponte en contacto con ÉVORA. Solicita una cotización personalizada o reserva una cita con nuestro equipo de expertos en eventos y bodas.">
+
+  <!-- Tipografías Oficiales -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navegación Principal -->
+  <header class="header">
+    <nav class="nav-container">
+   <a href="index.html" class="logo">
+  <span class="logo-title">ÉVORA</span>
+  <span class="logo-sub">EXPERIENCES</span>
+</a>
+<ul class="nav-links">
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="nosotros.html">Nosotros</a></li>
+  <li><a href="bodas.html">Bodas</a></li>
+  <li><a href="bodas-destino.html">Bodas Destino</a></li>
+  <li><a href="corporativos.html">Corporativos</a></li>
+  <li><a href="galeria.html">Galería</a></li>
+  <li><a href="Paquetes-Comerciales.html">Paquetes</a></li>
+  <li><a href="contacto.html" class="active">Contacto</a></li>
+</ul>
+      <a href="#contacto" class="btn btn-primary">Cotizar Evento</a>
+    </nav>
+  </header>
+
+  <!-- Hero Secundario -->
+  <section class="hero hero-secondary">
+    <div class="hero-content">
+      <p class="tagline">Atención Personalizada</p>
+      <h1>Hablemos de tu próximo gran evento.</h1>
+    </div>
+  </section>
+
+  <!-- Formulario y Datos de Contacto (Secciones 5 y 6) -->
+  <section class="section">
+    <div class="container contact-grid">
+      
+      <!-- Información Directa -->
+      <div class="contact-info">
+        <h2 class="section-title" style="text-align: left;">Información Directa</h2>
+        <p>Estamos listos para hacer realidad tu visión con la precisión y elegancia que cada celebración merece.</p>
+        
+        <div class="info-item">
+          <h4>WhatsApp Directo</h4>
+          <p>+51 900 000 000</p>
+        </div>
+        
+        <div class="info-item">
+          <h4>Correo Electrónico</h4>
+          <p>contacto@evora.pe</p>
+        </div>
+
+        <div class="info-item">
+          <h4>Atención Presencial</h4>
+          <p>Previa cita en nuestras oficinas de atención VIP.</p>
+        </div>
+      </div>
+
+      <!-- Formulario de Cotización / Cita -->
+      <div class="card form-card">
+        <h3>Solicitar Cotización o Reserva de Cita</h3>
+        <form action="#" method="POST" class="contact-form">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo *</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ej. Sofia Ramos">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico *</label>
+            <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="telefono">Teléfono / WhatsApp *</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="+51 999 999 999">
+          </div>
+
+          <div class="form-group">
+            <label for="tipo_evento">Tipo de Evento *</label>
+            <select id="tipo_evento" name="tipo_evento" required>
+              <option value="">Selecciona una opción</option>
+              <option value="boda">Boda Exclusiva</option>
+              <option value="boda_destino">Boda Destino</option>
+              <option value="corporativo">Evento Corporativo</option>
+              <option value="especial">Celebración Especial</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Detalles del Evento (Fecha estimada, cantidad de invitados, etc.)</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos más sobre lo que tienes en mente..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Solicitud</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Institucional -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="logo-title">ÉVORA</span>
+        <span class="logo-sub">EXPERIENCES · EVENTS · DESTINATION WEDDINGS</span>
+        <p>Cada detalle, perfectamente planeado.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="bodas.html">Bodas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="01_Paquetes_Comerciales.txt">Paquetes</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contacto</h4>
+        <p>Email: contacto@evora.pe</p>
+        <p>WhatsApp: +51 900 000 000</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 ÉVORA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp -->
+  <a href="https://wa.me/tu-numero-aqui" class="whatsapp-btn" target="_blank" aria-label="Contacto por WhatsApp">
+    <span>WhatsApp</span>
+  </a>
+
+</body>
+</html>
